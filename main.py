@@ -4,9 +4,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    model = {"title":"Hello From GCP Pipeline"}
+    model = {"title":"Hello From GCP Pipeline: Changes 2"}
     return render_template('index.html', model=model)
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=int("8080"), threaded=True)
+    app.run(debug=True, host="0.0.0.0", port=int("8080"), threaded=True)git commit -a -m "Testing Build Trigger"
+git commit -a -m "Testing Build Trigger"
+git commit -a -m "Testing Build Trigger"
